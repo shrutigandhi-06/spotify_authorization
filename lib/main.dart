@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return WebviewScaffold(
       key: scaffoldKey,
       url:
-          'https://accounts.spotify.com/authorize?client_id=5a9756f5bf2d45398a737632c8aa867b&response_type=code&redirect_uri=http%3A%2F%2Fgoogle.com%2F&scope=user-read-private%20user-read-email',
+          'https://accounts.spotify.com/authorize?client_id=5a9756f5bf2d45398a737632c8aa867b&response_type=code&redirect_uri=https://musically-mine.000webhostapp.com/index.php&scope=user-read-private%20user-read-email&show_dialog=true',
       hidden: true,
       appBar:
           AppBar(backgroundColor: Colors.indigo, title: Text("Current Url")),
