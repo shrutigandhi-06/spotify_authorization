@@ -2,7 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:http/http.dart' as http;
+import 'package:webview_url/top_tracks.dart';
 import 'screen2.dart';
+import 'top_tracks.dart';
 
 String code;
 void main() {
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         //'/': (context) => MyHomePage(),
         '/screen2': (context) => Screen2(),
+        '/screen3': (context) => TopTracks(),
       },
     );
   }
@@ -70,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return WebviewScaffold(
       key: scaffoldKey,
       url:
-          'https://accounts.spotify.com/authorize?client_id=5a9756f5bf2d45398a737632c8aa867b&response_type=code&redirect_uri=https://musically-mine.000webhostapp.com/index.php&scope=user-read-private%20user-read-email&show_dialog=true',
+          'https://accounts.spotify.com/authorize?client_id=5a9756f5bf2d45398a737632c8aa867b&response_type=code&redirect_uri=https://musically-mine.000webhostapp.com/index.php&scope=user-read-private%20user-read-email%20user-top-read&show_dialog=true',
       hidden: true,
       appBar:
           AppBar(backgroundColor: Colors.indigo, title: Text("Current Url")),

@@ -12,6 +12,7 @@ class Screen2 extends StatelessWidget {
           color: Colors.teal,
           onPressed: () {
             getAccessToken();
+            Navigator.pushNamed(context, '/screen3');
           },
         ),
       ),
